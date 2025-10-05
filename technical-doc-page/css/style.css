@@ -1,0 +1,104 @@
+
+#main-doc {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar {
+  width: 280px;
+  height: auto;
+  position: fixed;
+  left: 0;
+}
+
+#content {
+  position: relative;
+  left: 25%;
+}
+
+#navbar b {
+  font-size: 25px;
+  padding: 20px;
+  display: block;
+  font-family: sans-serif;
+  z-index: 10;
+}
+
+nav {
+  position: fixed;
+}
+
+.nav-link {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid;
+  display: block;
+  width: 90%;
+  height: auto;
+  color: grey;
+  padding-left: 20px;
+  border-right: hidden;
+  border-left: hidden;
+}
+
+#vertical-line {
+    position: relative;
+    right: 80.5%;
+    border: solid 1px red;
+    width: 90%;
+    height: auto;
+    border-right: 4px solid grey;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section header {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+pre code {
+  background-color: #eee;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  border-radius: 4px;
+}
+
+#Reference a {
+  text-decoration: underline;
+  color: blue;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.main-section {
+  position: relative;
+  float: left;
+  font-family: sans-serif;
+  color: black;
+  width: 100%;
+  padding-top: -400px;
+}

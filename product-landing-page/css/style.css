@@ -1,0 +1,159 @@
+body {
+  background-color: #F0F0F0;
+}
+
+#header-img {
+  width: 20%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#nav-bar {
+  display: flex;
+  margin-left: 350px;
+  position: fixed;
+}
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    float: left;
+    margin-left: 125px;
+    font-size: 20px;
+    color: black;
+}
+
+#center-content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Sans serif";
+  margin: 30px;
+}
+
+input[type=email] {
+  width: 20%;
+  height: 2em;
+  position: relative;
+  bottom: 10px;
+}
+
+input[type=submit] {
+  display: block;
+  float: center;
+  color: black;
+  background-color: #CCCC00;
+  padding: 3px 15px 3px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight:bold;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 5px;
+}
+
+.box-container {
+  display: flex;
+  background-color: red;
+}
+
+.icon-boxes {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.desc-boxes {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30%;
+}
+
+#video {
+  display: flex;
+  float: left;
+  margin-left: 60px;
+  margin-top: 100px;
+  width: 600px;
+  height: 350px;
+}
+
+.price-box {
+  margin-top: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  margin-left: 30px;
+  border: solid 1px black;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+}
+
+.box b {
+  margin: 10px;
+}
+
+.box h3 {
+  background-color: #E0E0E0;
+  margin: 0px;
+  padding: 10px;
+  font-weight: "Sans serif";
+}
+
+.select {
+  color: black;
+  background-color: #CCCC00;
+  padding: 3px 15px 3px 15px;
+  position: relative;
+  right: 30px;
+  top: 20px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 10px;
+  text-align: right;
+  height: 70px;
+  margin: 50px 215px 30px 240px;
+  background-color: #E0E0E0;
+}
+
+#footer a {
+  position: relative;
+  bottom: 15px;
+  padding: 10px;
+  left: 260px;
+  text-decoration: none;
+  float: right;
+  color: black;
+  font-size: 18px;
+}
+
+.copyright {
+  color: #A0A0A0;
+  position: relative;
+  margin: 20px;
+}
+
+@media (max-width: 800px ) {
+  body {
+    background-color: white;
+  }
+}

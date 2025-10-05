@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3df0a2;
+}
+
+.container {
+  display: flex;
+  /* Wraps the quote when the browser window is minimized */
+  flex-wrap: wrap;
+
+  /* Placing the box at the center */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.quote-box {
+  /* place the box in the center */
+  background-color: white;
+  /* Setting the width of the quote-box*/
+  width: 50vw;
+  /* To move the box vertically down*/
+  margin-top: 30vh;
+  margin-bottom: 10px;
+  border-radius: 2%;
+}
+
+.text {
+  position: relative;
+
+  /* Padding for the quote-text */
+  padding: 50px;
+  text-align: center;
+}
+
+/* Debugging
+.quote-box,
+.text,
+.author,
+.tweet-quote,
+.new-quote {
+  border: 1px solid black;
+}
+*/
+
+
+/* Quote Styling */
+
+/* Tweet Styling */
+
+.tweet-quote > h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+
+  /* Setting width and height of the t icon */
+  width: 5.5%;
+  height: 40px;
+  /* Moving the letter 't' to the center */
+  text-align: center;
+  /* Adjusting bottom padding so as to place the 't' at the center */
+  padding-bottom: 10px;
+  padding: 0 25px 0 15px;
+  /* Adding space between the icons*/
+  margin-left: 20px;
+
+  border-radius: 3px;
+}
+
+.post-quote {
+  padding: 30px;
+  display: flex;
+}
+
+/* Color Styling */
+/* ----------------------------- */
+.tweet-quote > i,
+.text,
+.author {
+  color: #00b884;
+}
+
+.tweet-quote > h1,
+.button {
+  background-color: #00b884;
+}
+/* ----------------------------- */
+
+
+.tweet-quote  {
+  display: flex;
+  /* To place both the icons to the left */
+  justify-content: flex-start;
+  /* To align both the items across the row */
+  align-items: center;
+  width: 50%;
+  /* Flex wraps the icons */
+  flex-wrap: wrap;
+}
+
+.new-quote {
+  display: flex;
+  /* Move button to the right */
+  justify-content: flex-end;
+  width: 50%;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+/* Author Styling*/
+
+
+.author > h1 {
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: right;
+  padding: 0 50px;
+}
+
+.owner > a {
+  text-decoration: none;
+  color: white;
+}
+
+.changeColor {
+  color: blue;
+}
+
+.changeBgColor {
+  background-color: purple;
+}

@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+  /* fior scrolling purposes */
+  height: auto;
+  display: flex;
+  /* so that all the container class are vertically-aligned */
+  flex-direction: column;
+}
+
+.nav-container {
+  display: flex;
+  /* so that the nav-heading are at the right corner */
+  justify-content: flex-end;
+
+  /* so the navbar is stays where it is
+     even the user scrolss */
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  /* so that the navbar streches from left-to-right */
+  width: 100%;
+}
+
+.intro-container {
+  /* to render it after the nav-bar, as the position "fixed" set in the
+    navbar container pops out of the normal flow */
+  margin-top: 60px;
+
+  /* To align the text horizontally & vertically at the center */
+  /* Need it to set the above properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53vw;
+  margin: 0;
+}
+
+.project-container {
+  /* flex-child h4, div[id='project-items'], div[class='button']
+    setting flex-direction to column to align flex-items vertically.
+  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-container {
+  background-color: #33FF99;
+  /*
+    flex-child div[id='contact-text'], div['social-items']
+    setting flex-direction to column to align flex-items vertically
+  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  background-color: #2b363c;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+.project-items {
+   /* sets all the project items/boxes horizontally */
+   display: flex;
+   /* wrap box to the next horizontal line */
+   flex-wrap: wrap;
+   cursor: grab;
+}
+
+.social {
+  /* sets all the div[social-items] circles horizontally */
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 150px;
+  flex-wrap: wrap;
+}
+
+.social-items {
+  /* setting to create a "responsive" circle */
+  border-radius: 50%;
+  padding: 4% 10px;
+  border: solid 6px #32CD32;
+  /* adds spaces between the circles */
+  margin: 30px;
+  font-weight: normal;
+  white-space: nowrap;
+  background-color: grey;
+  font-family: sans-serif;
+  cursor: grab;
+}
+
+.social-items:nth-child(2),
+.social-items:nth-child(3),
+.social-items:nth-child(5){
+  padding: 4% 30px;
+}
+
+.item {
+  /* Adds spaces between boxes */
+  margin: 20px 180px;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  cursor: grab;
+}
+.nav-container,
+.intro-container {
+  background-color: #B8B8B8;
+}
+
+/* Nav-Bar styling */
+.nav-container ul {
+  list-style-type: none;
+}
+
+.nav-container li {
+  /* So that nav-headins are all on the same line and receive equal padding on
+  all the side */
+  display: inline-block;
+  padding: 20px;
+}
+
+/* Intro styling */
+.intro-text h4:nth-child(1) {
+  font-size: 30px;
+  cursor: auto;
+}
+
+.intro-text h4:nth-child(2) {
+  color: green;
+  text-align: center;
+}
+
+/* Styling button */
+.button {
+  border: 1px solid orange;
+  background-color: #acc0c3;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 50px 80px 50px 0;
+  width: 150px;
+  cursor: grab;
+}
+
+
+/* Styling text*/
+.project-container h4 {
+  margin: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: grey;
+}
+
+
+/* Styling image quote */
+.item h4 {
+  /* by setting position to relative, the quote sits excatly below
+     the image */
+  position: relative;
+  margin: 0;
+  font-size: 20px;
+
+  /* places  quote to the center of the box and style it further */
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-bottom: 2px solid grey;
+}
+
+.contact-text {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  cursor:auto;
+}
+
+/* Styling links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+
+@media only screen and (min-width: 200px) {
+  .intro-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.item img[src="images/six.png"] {
+  padding: 38px 38px;
+  background-color: #2892E0;
+}

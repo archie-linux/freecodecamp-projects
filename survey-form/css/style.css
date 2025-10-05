@@ -1,0 +1,113 @@
+body {
+  background-color: #b3cccc;
+}
+
+#title {
+  text-align: center;
+}
+
+#survey-form {
+  background-color: white;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-radius: 4px;
+  height: 700px;
+}
+
+#description {
+  padding-top: 30px;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label[for=number] {
+  position: relative;
+}
+
+input[type=number] {
+  position: relative;
+  width: 14%;
+}
+
+label {
+  padding-right: 10px;
+}
+
+#radio-buttons {
+  display: inline-block;
+  margin-right: 240px;
+}
+
+label[for=question1] {
+  display: inline-block;
+}
+
+label[for=choice1] {
+  margin-right: 10px;
+}
+
+label[for=choice2] {
+  margin-right: 30px;
+}
+
+label[for=choice3] {
+  margin-right: 20px;
+}
+
+input[type=number] {
+  margin-left: 10px;
+}
+#dropdown-box {
+  display: inline-block;
+  padding-right: 225px;
+}
+
+#boxes {
+  display: inline-block;
+  position: relative;
+  right: 80px;
+  text-align: left;
+}
+
+label[for=dropdown1] {
+  position: relative;
+  right: 100px;
+}
+
+#dropdown1 {
+  position: relative;
+  right: 80px;
+}
+
+label[for=suggestion] {
+    display: inline-block;
+    position: relative;
+    bottom: 170px;
+    right: 90px;
+  }
+
+#textarea {
+  position: relative;
+  bottom: 30px;
+  right: 30px;
+}
+
+textarea {
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+
+#submit {
+  background-color: #63D1F4;
+  color: white;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
